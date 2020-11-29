@@ -37,6 +37,7 @@ export const SearchBar: FC<SearchBarProps> = ({ onSearch }) => {
         className={styles["search-bar__input"]}
         onInput={handleInput}
         loading={isLoading}
+        onSearch={debounceSearch}
       />
       <Divider />
     </div>
